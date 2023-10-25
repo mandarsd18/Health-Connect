@@ -1,0 +1,177 @@
+<%- include ('Partials/header') %>
+
+  <header class="hero-section">
+    <section class="main-div">
+      <div class="hero-text">
+        <h1 class="hero-heading">The Best Reliable Health Service In Your Hands</h1>
+        <p class="hero-subtxt">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Blanditiis adipisci saepe quidem vero ullam aspernatur placeat recusandae excepturi consectetur, temporibus omnis impedit incidunt?</p>
+        <a href="/allHospitals" class="hero-btn"> Make an Appionment</a>
+
+      </div>
+      <div class="img-div">
+        <img src="docimg.png" alt="">
+
+      </div>
+
+    </section>
+
+  </header>
+
+  <section class="service" id="service">
+
+    <div class="inner-service">
+      <h1 class="span">Services</h1>
+      <h1 class="ser-head">Provides Our Best Services</h1>
+      <div class="service-cards">
+        <div class="service-card">
+          <img src="heartrate.png" alt="">
+          <h1>Cardiology</h1>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae Lorem, ipsum.</p>
+        </div>
+
+        <div class="service-card">
+          <img src="brain.png" alt="">
+          <h1>Neurology</h1>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae Lorem, ipsum.</p>
+        </div>
+
+        <div class="service-card">
+          <img src="arthritis.png" alt="">
+          <h1>Orthopedies</h1>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae Lorem, ipsum.</p>
+        </div>
+
+        <div class="service-card">
+          <img src="surgeryroom.png" alt="">
+          <h1>Surgery</h1>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae Lorem, ipsum.</p>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <section>
+    <section class="main-div">
+
+      <div class="img-div">
+        <img src="doc2.png" alt="">
+
+      </div>
+      <div class="hero-text">
+        <span class="span">Book Appionment</span>
+        <h1 class="hero-heading" style="margin: 20px 0;">Make An Appointment With A Doctor Today ,Online</h1>
+        <p class="hero-subtxt">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Blanditiis adipisci saepe quidem vero ullam aspernatur placeat recusandae excepturi consectetur, temporibus omnis impedit incidunt?</p>
+        <a href="/allDoctors" class="hero-btn">Book Now</a>
+
+      </div>
+
+
+    </section>
+  </section>
+
+  <section class="doctors-div " id="hos-div">
+    <div class="inner-div">
+      <h1 class="span" style="text-align: center;">Hospitals</h1>
+      <h1 class="ser-head" style="text-align: center;">Provides Our Best Services</h1>
+      <div class="doctor-cards">
+
+        <% for(let item of data.slice(0,4) ){%>
+
+        <div class="doc-card">
+          <div class="doc-img-div">
+            <img class="doc-img" src=<%= item.hosp_image %> alt="">
+          </div>
+          <div class="doc-text">
+            <h1 class="doc-name"><%= item.hospital_name %></h1>
+            <p class="doc-spec"><%= item.type %></p>
+            <div class="doc-btn-div">
+              <p class="doc-dg"><%= item.city %></p>
+              <a class="hero-btn" href="/hospital/<%= item.id %>">Book Appionment</a>
+            </div>
+          </div>
+        </div>
+        <%}%>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="doctors-div" id="doct-div" style="margin-top: 6rem;">
+    <div class="inner-div">
+      <h1 class="span" style="text-align: center;">Doctors</h1>
+      <h1 class="ser-head" style="text-align: center;">Provides Our Best Services</h1>
+      <div class="doctor-cards">
+        <% for(let item of data.slice(0,4) ){%>
+
+        <div class="doc-card">
+          <div class="doc-img-div">
+            <img class="doc-img" src=<%= item.doctor.doc_img %> alt="">
+          </div>
+          <div class="doc-text">
+            <h1 class="doc-name"><%= item.doctor.doc_name %></h1>
+            <p class="doc-spec"><%= item.doctor.spec %></p>
+            <div class="doc-btn-div">
+              <p class="doc-dg"><%= item.doctor.degree %></p>
+              <a class="hero-btn" href="/doctor/<%= item.id %>">Book Appionment</a>
+            </div>
+          </div>
+        </div>
+        <%}%>
+
+      </div>
+    </div>
+  </section>
+
+  <div class="tape">
+
+    <div>
+      <h1>300+</h1>
+      <p>Regular Patient</p>
+    </div>
+
+    <div>
+      <h1>1000+</h1>
+      <p>Patient Capacity</p>
+    </div>
+
+    <div>
+      <h1>150+</h1>
+      <p>Expert Doctors</p>
+    </div>
+
+    <div>
+      <h1>50+</h1>
+      <p>Excellent Hospitals</p>
+    </div>
+  </div>
+
+  <section class="testimonials">
+    <div class="test-inner">
+      <h1 class="span" style="text-align: center;">Testimonials</h1>
+      <h1 class="ser-head" style="text-align: center;">What Our Patient Say About Us</h1>
+      <div class="test-cards">
+        <div class="test-card">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem repellat eius soluta!</p>
+          <span>-Mandar Deshmukh</span>
+        </div>
+        <div class="test-card">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem repellat eius soluta!</p>
+          <span>-Mandar Deshmukh</span>
+        </div>
+        <div class="test-card">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem repellat eius soluta!</p>
+          <span>-Mandar Deshmukh</span>
+        </div>
+        <div class="test-card">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem repellat eius soluta!</p>
+          <span>-Mandar Deshmukh</span>
+        </div>
+      </div>
+    </div>
+
+
+  </section>
+
+  <%- include ('Partials/footer') %>

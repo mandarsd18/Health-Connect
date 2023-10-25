@@ -1,0 +1,90 @@
+<%- include ('Partials/header') %>
+
+<section class="detail-page">
+    <div class="inner-detail-page">
+        <div class="detail-info-div">
+            <div class="image-div">
+                <img src="<%= specData.hosp_image %>" class="detail-div-image" alt="">
+            </div>
+            <div class="detail-text-div">
+                
+                <div class="name-div">
+                    <h1 class="name"><%= specData.hospital_name %></h1>
+                    <p class="type"><%= specData.type %> Hospital </p>
+                </div>
+                <div class="add-div">
+                    <p class="city"><%= specData.city %>, <%= specData.state %></p>
+                    <p class="bed-cnt">Bed Count : <%= specData.hospital_bed_count %></p>
+                </div>
+                <div class="desc-div">
+                    <p class="desc"><%= specData.desc %></p>
+                </div>
+
+            </div>
+
+        </div>
+        <form class="detail-form" >
+            <div class="inp1-div">
+                <label ">Enter your name :</label>
+                <input class="nameinp" type="text" name="" >
+            </div>
+            <div class="inp2-div">
+                <label for="name">Enter your email :</label>
+                <input class="emailinp" type="email" name="" id="name">
+            </div>
+            <div class="inp3-div">
+                <label for="name">Enter your phone number :</label>
+                <input type="number" class="numinp" name="" id="name">
+            </div>
+            <div class="inp4-div">
+                <div class="adt">
+                    <label for="name">Adult:</label>
+                    <input type="number" name="" id="name" class="adtinp">
+                </div>
+                <div class="children">
+                    <label for="name">Children :</label>
+                    <input type="number" name="" id="name" class="chdinp">
+                </div>
+
+            </div>
+
+            <div class="inp5-div">
+                <div class="checkin">
+                    <label for="name">Check in date :</label>
+                    <input type="date" name="" id="name" class="dtinp">
+                </div>
+                <div class="checkout">
+                    <label for="name">Check out date :</label>
+                    <input type="date" name="" id="name" class="dtinp">
+                </div>
+
+            </div>
+            <div class="inp6-div">
+                <div class="room">
+                    <label for="">Select Room type :</label>
+                    <select name="" id="">
+                        <option value="">Twin Sharing Room</option>
+                        <option value="">Deluxe Room,</option>
+                        <option value="">Superior Deluxe Room,</option>
+                        <option value="">Presidential Suite,</option>
+                        <option value="">Rehab Room</option>
+                        <option value="">Serviced Apartment and Day Care</option>
+
+                    </select>
+                </div>
+                <div class="doctor">
+                    <label for="">Select Doctor :</label>
+                    <select name="" id="">
+                        <option value=""><%= specData.doctor.doc_name %></option>
+                        
+
+                    </select>
+                </div>
+               
+            </div>
+           <button>Book Now</button>
+        </form>
+    </div>
+</section>
+
+<%- include ('Partials/footer') %>

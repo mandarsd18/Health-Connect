@@ -1,0 +1,31 @@
+<%- include ('Partials/header') %>
+
+     
+        <section class="cards-div" style="margin: 6rem 0;">
+          <h1 class="span" style="text-align: center;">Doctors</h1>
+      <h1 class="ser-head" style="text-align: center;">Provides Our Best Services</h1>
+          <div class="doctor-cards " style="width: 80%; margin: 0 auto;">
+            
+
+            <% for(let item of data ){%>
+
+                <div class="doc-card">
+                  <div class="doc-img-div">
+                    <img class="doc-img" src=<%= item.doctor.doc_img %> alt="">
+                  </div>
+                  <div class="doc-text">
+                    <h1 class="doc-name"><%= item.doctor.doc_name %></h1>
+                    <p class="doc-spec"><%= item.doctor.spec %></p>
+                    <div class="doc-btn-div">
+                      <p class="doc-dg"><%= item.doctor.degree %></p>
+                      <a class="hero-btn" href="/doctor/<%= item.id %>">Book Appionment</a>
+                    </div>
+                  </div>
+                </div>
+                <%}%>
+          </div>
+
+        </section>
+
+
+        <%- include ('Partials/footer') %>
