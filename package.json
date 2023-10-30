@@ -6,9 +6,7 @@
   "name": "medial-website",
   "version": "1.0.0",
   "main": "index.js",
-  "engines": {
-    "node": "18.x"
-  },
+
   "devDependencies": {},
   "scripts": {
     "start": "node index.js",
