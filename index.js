@@ -9,7 +9,7 @@ app.use(express.static(path.join(__dirname,'public')));
 
 
 app.get("/",(req,res)=>{
-    res.render('home',{data})
+    res.render('Home.ejs',{data})
 })
 app.get("/hospital/:id",(req,res)=>{
     const hospitalId = req.params.id;
@@ -20,7 +20,7 @@ app.get("/hospital/:id",(req,res)=>{
         //    console.log(item)
         }
     }
-    res.render("hospital",{specData})
+    res.render("Hospital.ejs",{specData})
 })
 
 app.get("/doctor/:id",(req,res)=>{
@@ -36,17 +36,17 @@ app.get("/doctor/:id",(req,res)=>{
         //    console.log(item)
         }
     }
-    res.render("doctor",{specData})
+    res.render("Doctor.ejs",{specData})
 })
 
 app.get("/allHospitals",(req,res)=>{
-    res.render('allHospital',{data})
+    res.render('AllHospital.ejs',{data})
 })
 app.get("/allDoctors",(req,res)=>{
-    res.render('allDoctor',{data})
+    res.render('AllDoctor.ejs',{data})
 })
 app.get("/contactUs",(req,res)=>{
-    res.render('contactUs')
+    res.render('ContactUs.ejs')
 })
 
 app.listen(5000,()=>{
