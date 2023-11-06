@@ -1,7 +1,7 @@
 const data = [
     {
       id: 1,
-      hospital_name: "Yash Hospital",
+      hospital_name: "TeethCare Hospital",
       type: "Dental",
       city: "Jalgaon",
       state: "Maharastra",
@@ -24,7 +24,7 @@ const data = [
     },
     {
       id: 2,
-      hospital_name: "Mandar Hospital",
+      hospital_name: "Sleepwell Hospital",
       type: "Clinics for Sleep Disorders",
       city: "Pune",
       state: "Maharastra",
@@ -47,7 +47,7 @@ const data = [
     },
     {
       id: 3,
-      hospital_name: "Devang Hospital",
+      hospital_name: "Normal Hospital",
       type: "Psychiatric Hospitals",
       city: "Nanded",
       state: "Maharastra",
@@ -68,9 +68,10 @@ const data = [
         },
       
     },
+    
     {
       id: 4,
-      hospital_name: "Priyadarshani Hospital",
+      hospital_name: "Something Hospital",
       type: "Hospices & Palliative Care Centers",
       city: "Pusad",
       state: "Maharastra",
@@ -85,10 +86,12 @@ const data = [
           spec: "Pediatrics",
           doc_desc:
             "Dr. Emily Anderson, a renowned physician at Greenfield Medical Center, located at 123 Main Street in Greenfield County, is a true beacon of expertise and compassionate healthcare. With a wealth of experience and board certification in internal medicine, Dr. Anderson provides patients with top-tier medical care. Her patient-centered approach is marked by active listening, understanding, and the development of tailored treatment plans to address individual needs. She firmly believes in a holistic approach to health, emphasizing preventive care and lifestyle management. Dr. Anderson utilizes cutting-edge technology and collaborates with other healthcare professionals to ensure comprehensive and coordinated care. Her commitment to patient well-being extends beyond the clinic, fostering trust, open communication, and patient empowerment. Dr. Emily Anderson is not just a physician; she is a compassionate healer dedicated to the health and wellness of her patients, making her an invaluable asset to Greenfield Medical Center.",
-          doc_img: "https://www.bpmed.com.au/blogimages/000/000/109/original.jpg",
+          doc_img: "https://media.istockphoto.com/id/1189304032/photo/doctor-holding-digital-tablet-at-meeting-room.jpg?s=612x612&w=0&k=20&c=RtQn8w_vhzGYbflSa1B5ea9Ji70O8wHpSgGBSh0anUg=",
           fees: 150,
         },
       },
+
+      
   ];
 
   module.exports=data;

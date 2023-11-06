@@ -22,7 +22,7 @@ app.get("/hospital/:id",(req,res)=>{
     }
     res.render("Hospital.ejs",{specData})
 })
-
+                                               1
 app.get("/doctor/:id",(req,res)=>{
     const info = req.params;
     console.log(info)
